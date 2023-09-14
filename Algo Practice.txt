@@ -1,0 +1,13 @@
+Recommended order:
+If you are just beginning to learn these ideas, first go through the brilliant course - Algorithm basics:
+https://brilliant.org/courses/computer-science-algorithms/?from-course=computer-science-algorithms
+
+Take the time to learn about the algorithm here - https://techdevguide.withgoogle.com/paths/data-structures-and-algorithms/#linear
+Go through the videos and tutorials for a single algorithm like Hash Maps.
+
+Practice that skill through neet code, which tends to be better organized than the other websites - https://neetcode.io/practice
+
+Then use the remaining Leetcode, HackerRank and Codewars to sharpen your skills. -
+https://leetcode.com/problems/two-sum/
+https://www.hackerrank.com/domains/algorithms
+https://www.codewars.com/kata/beta/my-languages
