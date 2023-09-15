@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTS</title>
+</head>
+<body>
+    <h1>Random Numbers:</h1>
+    <ul>
+        {% for num in random_numbers %}
+            <li>{{num}}</li>
+        {% endfor %}
+    </ul>
+
+    <!-- Looping through a list with a table -->
+    <h2>Students:</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for student in students %}
+                <tr>
+                    <td>{{student['name']}}</td>
+                    <td>{{student['age']}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Easier way to navigate through a list  -->
+    {% for student in students %}
+    <p>{{ student['name'] }} - {{ student['age'] }}</p>
+    {% endfor %}
+
+</body>
+</html>
