@@ -8,7 +8,7 @@ app = Flask(__name__)    # Create a new instance of the Flask class called "app"
 
 @app.route('/')
 def index():
-    return render_template("index.html")
+    return render_template("index.html", phrase = "hello", times = 5)
 
 @app.route('/m')
 def hello_world2():
@@ -18,9 +18,13 @@ def hello_world2():
 def success():
     return "SUCCESS"
 
-@app.route('/hello/<name>/<int:num>')
+# @app.route('/hello/<name>/<int:num>')
+# def hello(name, num):
+#     return f"hello {name * num} " 
+
+@app.route('/hello-2/<name>/<int:num>')
 def hello(name, num):
-    return f"hello {name * num} " 
+    return render_template("hello.html", name = name, num = num) 
 
 
 if __name__=="__main__":   # Ensure this file is being run directly and not from a different module    
